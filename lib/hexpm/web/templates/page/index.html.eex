@@ -62,46 +62,61 @@
     <li>
       <%= icon(:octicon, :package, class: "stat-icon stat-icon-package") %>
       <span class="stat-info">
-        <span class="count-info">
-          <%= human_number_space @num_packages %>
-        </span> <br>
-        packages <br> available
+        <span class="count-info wrap">
+          <%= human_number_space(5560, 5) %>
+        </span>
+        <span class="count-info no-wrap">
+          <%= human_number_space(5560) %>
+        </span>
+        <br> packages <br> available
       </span>
     </li>
     <li>
       <%= icon(:octicon, :versions, class: "stat-icon stat-icon-versions") %>
       <span class="stat-info">
-        <span class="count-info">
-          <%= human_number_space @num_releases %>
-        </span> <br>
-        package <br> versions
+        <span class="count-info wrap">
+          <%= human_number_space(28349, 5) %>
+        </span>
+        <span class="count-info no-wrap">
+          <%= human_number_space(28349) %>
+        </span>
+        <br> package <br> versions
       </span>
     </li>
     <li>
       <%= icon(:octicon, :calendar, class: "stat-icon stat-icon-calendar") %>
       <span class="stat-info">
-        <span class="count-info">
-          <%= human_number_space @total["day"] %>
-        </span> <br>
-        downloads <br> yesterday
+        <span class="count-info wrap">
+          <%= human_number_space(110034, 5) %>
+        </span>
+        <span class="count-info no-wrap">
+          <%= human_number_space(110034) %>
+        </span>
+        <br> downloads <br> yesterday
       </span>
     </li>
     <li>
       <%= icon(:octicon, :calendar, class: "stat-icon stat-icon-calendar") %>
       <span class="stat-info">
-        <span class="count-info">
-          <%= human_number_space @total["week"] %>
-        </span> <br>
-        downloads <br> last 7 days
+        <span class="count-info wrap">
+          <%= human_number_space(2765136, 5) %>
+        </span>
+        <span class="count-info no-wrap">
+          <%= human_number_space(2765136) %>
+        </span>
+        <br> downloads <br> last 7 days
       </span>
     </li>
     <li>
       <%= icon(:octicon, :calendar, class: "stat-icon stat-icon-calendar") %>
       <span class="stat-info">
-        <span class="count-info">
-          <%= human_number_space @total["all"] %>
-        </span> <br>
-        downloads <br> all time
+        <span class="count-info wrap">
+          <%= human_number_space(158089013, 5) %>
+        </span>
+        <span class="count-info no-wrap">
+          <%= human_number_space(158089013) %>
+        </span>
+        <br> downloads <br> all time
       </span>
     </li>
   </ul>
