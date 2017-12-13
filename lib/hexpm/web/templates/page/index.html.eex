@@ -57,7 +57,7 @@
   </div>
 </div>
 
-<div class="home-stats">
+<div class="stats">
   <ul class="container">
     <li>
       <%= icon(:octicon, :package, class: "stat-icon stat-icon-package") %>
