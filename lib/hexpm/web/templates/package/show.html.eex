@@ -74,7 +74,7 @@ tools = Keyword.take(tools, compatible_tools)
       <span class="license"><%= Enum.join(licenses, ", ") %></span>
     <% end %>
 
-    <div class="stats clearfix">
+    <div class="stats package-stats clearfix">
       <ul>
         <li>
           <%= icon(:octicon, :calendar, class: "stat-icon stat-icon-calendar") %>
